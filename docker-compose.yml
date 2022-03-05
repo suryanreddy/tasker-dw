@@ -1,0 +1,26 @@
+version: '2'
+services:
+
+  mysql:
+    container_name: tasker_db
+    image: library/mysql:8.0.28
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: tasker_dw_db
+      MYSQL_ROOT_PASSWORD: root1234
+    volumes:
+      - tasker_db_volume:/var/lib/mysql
+
+  tasker_dw:
+    container_name: tasker_dw
+    image: veluthurla/tasker-dw:latest
+    ports:
+      - 9000:9000
+      - 9001:9001
+
+volumes:
+  tasker_db_volume:
+
+networks:
+  tasker-dw_default:

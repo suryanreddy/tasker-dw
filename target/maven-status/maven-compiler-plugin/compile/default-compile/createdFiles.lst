@@ -1,0 +1,8 @@
+com/oracle/tasker/api/Task.class
+com/oracle/tasker/health/TaskerHealthCheck.class
+com/oracle/tasker/TaskerConfiguration.class
+com/oracle/tasker/db/TaskDAO.class
+com/oracle/tasker/TaskerApplication.class
+com/oracle/tasker/TaskerApplication$2.class
+com/oracle/tasker/TaskerApplication$1.class
+com/oracle/tasker/resources/TaskResource.class

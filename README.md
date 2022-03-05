@@ -1,7 +1,6 @@
 # Tasker-DropWizard
 
 ## Prerequisites
----
 
 1. Make sure, you have maven installed on the machine where you want to build and run this application (refer: https://maven.apache.org/install.html)
 2. Minimum Open Jdk 11 is needed
@@ -18,11 +17,11 @@ How to start the tasker application
 2. Start application with `java -jar target/tasker-dw-1.0-SNAPSHOT.jar server config.yml`
 3. To check that your application is running enter url `http://localdocker:9000`
 
-Below ar the defined APIs
-DELETE  /tasker?taskId=<taskId>
-GET     /tasker?taskId=<taskId>
-POST    /tasker/create
-GET     /tasker/findAll
+###Below ar the defined APIs
+1. DELETE  /tasker?taskId=<taskId>
+2. GET     /tasker?taskId=<taskId>
+3. POST    /tasker/create
+4. GET     /tasker/findAll
 
 Health Check
 ---
@@ -30,7 +29,7 @@ Health Check
 To see your applications health enter url `http://localdocker:9001/healthcheck`
 
 
-#How to run as Docker container?
+How to run as Docker container?
 ---
 
 1. After checking the the code to your machine, run "mvn clean package" under the package folder

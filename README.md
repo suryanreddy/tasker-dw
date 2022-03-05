@@ -17,9 +17,9 @@ How to start the tasker application
 2. Start application with `java -jar target/tasker-dw-1.0-SNAPSHOT.jar server config.yml`
 3. To check that your application is running enter url `http://localdocker:9000`
 
-###Below ar the defined APIs
-1. DELETE  /tasker?taskId=<taskId>
-2. GET     /tasker?taskId=<taskId>
+Below ar the defined APIs
+1. DELETE  /tasker?taskId=`<taskId>`
+2. GET     /tasker?taskId=`<taskId>`
 3. POST    /tasker/create
 4. GET     /tasker/findAll
 

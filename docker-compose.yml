@@ -14,10 +14,16 @@ services:
 
   tasker_dw:
     container_name: tasker_dw
-    image: veluthurla/tasker-dw:latest
+    image: veluthurla/tasker-dw:1.0
     ports:
       - 9000:9000
       - 9001:9001
+
+  tasker-ui:
+    container_name: tasker_ui
+    image: veluthurla/tasker-ui:1.0
+    ports:
+      - 3000:80
 
 volumes:
   tasker_db_volume:

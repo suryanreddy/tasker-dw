@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Path("/tasker")
-@Produces(MediaType.APPLICATION_JSON)
+@Produces({MediaType.APPLICATION_JSON})
 public class TaskResource {
 
     private static final Logger logger = LoggerFactory.getLogger(TaskResource.class);
